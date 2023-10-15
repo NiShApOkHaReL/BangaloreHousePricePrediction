@@ -35,7 +35,7 @@ Fill in the required information such as Location, number of BHK and bathroom an
 After entering the necessary details, click the "Predict" button.
 
 9. **View the result:**
-You will receive the predictionwhere you can see the predicted Price of House in the given location based on the input parameters.
+You will receive the prediction where you can see the predicted Price of House in the given location based on the input parameters.
 
 Enjoy using this application to predict the price of house as per your requirements quickly and easily.
 
