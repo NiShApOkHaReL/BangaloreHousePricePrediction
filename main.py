@@ -23,10 +23,10 @@ def predict():
 
     print(location, bhk, bath, sqft)
 
-    input = pd.DataFrame([[location,sqft,bath,bhk]], columns = ['location','total_sqft','bath','bhk'])
-    prediction = pipe.predict(input)[0] * 1e5
+    inputData = pd.DataFrame([[location,sqft,bath,bhk]], columns = ['location','total_sqft','bath','bhk'])
+    prediction = pipe.predict(inputData)[0] * 1e5
 
-    return jsonify({'prediction': np.round(prediction, 2)})
+    return render_template("result.html",prediction=round(prediction,2))
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
